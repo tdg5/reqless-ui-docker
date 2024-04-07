@@ -13,6 +13,8 @@ jobs:
     env:
       VERSION: ${{ github.event.inputs.version }}
     name: Test, build, publish, and release the package
+    permissions:
+      contents: 'write'
     runs-on: ubuntu-latest
 
     steps:
