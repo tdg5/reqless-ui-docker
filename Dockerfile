@@ -1,4 +1,4 @@
-FROM ruby:3.3.0-bullseye
+FROM ruby:3.1.4-bullseye
 
 ARG REQLESS_UI_GIT_REF
 ARG REQLESS_UI_VERSION

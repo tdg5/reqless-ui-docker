@@ -38,22 +38,19 @@ GEM
     nio4r (2.7.1)
     puma (6.4.2)
       nio4r (~> 2.0)
-    rack (3.0.10)
-    rack-protection (4.0.0)
+    rack (2.2.9)
+    rack-protection (3.2.0)
       base64 (>= 0.1.0)
-      rack (>= 3.0.0, < 4)
-    rack-session (2.0.0)
-      rack (>= 3.0.0)
-    rackup (2.1.0)
-      rack (>= 3)
-      webrick (~> 1.8)
+      rack (~> 2.2, >= 2.2.4)
+    rackup (1.0.0)
+      rack (< 3)
+      webrick
     redis (3.3.5)
     ruby2_keywords (0.0.5)
-    sinatra (4.0.0)
+    sinatra (3.2.0)
       mustermann (~> 3.0)
-      rack (>= 3.0.0, < 4)
-      rack-protection (= 4.0.0)
-      rack-session (>= 2.0.0, < 3)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.2.0)
       tilt (~> 2.0)
     tilt (2.3.0)
     tzinfo (2.0.6)
@@ -62,7 +59,6 @@ GEM
     zeitwerk (2.6.13)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -71,10 +67,10 @@ DEPENDENCIES
   puma (~> 6.4.2)
   qless!
   qmore!
-  rack (~> 3.0.10)
-  rackup (~> 2.1.0)
+  rack (~> 2.2.9)
+  rackup (~> 1.0.0)
   redis (~> 3.3.5)
-  sinatra (~> 4.0.0)
+  sinatra (~> 3.2.0)
 
 BUNDLED WITH
-   2.5.3
+   2.3.26
