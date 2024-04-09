@@ -2,7 +2,7 @@ require "qless"
 require "qless/server"
 require "qmore-server"
 
-reqless_redis_url = ENV["REQLESS_REDIS_URL"]
+reqless_redis_url = ENV["REQLESS_UI_REDIS_URL"]
 qmore_refresh_frequency_seconds = ENV["QMORE_REFRESH_FREQUENCY_SECONDS"]
 
 client = Qless::Client.new(:url => reqless_redis_url)

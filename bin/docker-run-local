@@ -13,7 +13,7 @@ docker run \
   --env "REQLESS_UI_GIT_REF=$(git rev-parse HEAD)" \
   --env "REQLESS_UI_VERSION=0.0.1" \
   --env "REQLESS_UI_HOST=${REQLESS_UI_HOST:-localhost}" \
-  --env "REQLESS_REDIS_URL=${REQLESS_REDIS_URL:-redis://localhost:6379/0}" \
+  --env "REQLESS_UI_REDIS_URL=${REQLESS_UI_REDIS_URL:-redis://localhost:6379/0}" \
   --interactive \
   --network host \
   --rm \
