@@ -1,4 +1,4 @@
-FROM ruby:3.1.4-bullseye
+FROM ruby:3.3.0-bullseye
 
 ARG REQLESS_UI_GIT_REF
 ARG REQLESS_UI_VERSION
@@ -12,8 +12,7 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y libxml2-dev redis-tools
 
-COPY Gemfile .
-COPY Gemfile.lock .
+COPY Gemfile Gemfile.lock .
 
 RUN NOKOGIRI_USE_SYSTEM_LIBRARIES=1 bundle install
 

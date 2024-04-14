@@ -1,76 +1,69 @@
 GIT
   remote: https://github.com/tdg5/qless-rb.git
-  revision: 28014aa8b46b399cdaca24fbe8b8ef0ceb226e05
+  revision: 89290f430d322c984794f63e333f66bce94667a2
+  branch: main
   submodules: true
   specs:
     qless (0.10.0.pre)
-      redis (>= 2.2)
+      redis (~> 5.1.0)
 
 GIT
   remote: https://github.com/tdg5/qmore.git
-  revision: 7693058567797e804bd722818b1364f5c3b4a99a
+  revision: 1df8ce909243569ba93d3b00d569a5bc4f6988b7
+  branch: main
   specs:
     qmore (0.7.1)
-      gem_logger
-      multi_json (~> 1.7)
+      multi_json (~> 1.15)
       qless (~> 0.9)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.7.7)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 1.6, < 2)
-      minitest (>= 5.1)
-      tzinfo (~> 2.0)
-      zeitwerk (~> 2.3)
     base64 (0.2.0)
     bigdecimal (3.1.7)
-    concurrent-ruby (1.2.3)
-    gem_logger (0.3.0)
-      activesupport
-    i18n (1.14.4)
-      concurrent-ruby (~> 1.0)
-    minitest (5.22.3)
+    connection_pool (2.4.1)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.1)
     puma (6.4.2)
       nio4r (~> 2.0)
-    rack (2.2.9)
-    rack-protection (3.2.0)
+    rack (3.0.10)
+    rack-protection (4.0.0)
       base64 (>= 0.1.0)
-      rack (~> 2.2, >= 2.2.4)
-    rackup (1.0.0)
-      rack (< 3)
-      webrick
-    redis (3.3.5)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
+    redis (5.1.0)
+      redis-client (>= 0.17.0)
+    redis-client (0.22.0)
+      connection_pool
     ruby2_keywords (0.0.5)
-    sinatra (3.2.0)
+    sinatra (4.0.0)
       mustermann (~> 3.0)
-      rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.2.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.0.0)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
     tilt (2.3.0)
-    tzinfo (2.0.6)
-      concurrent-ruby (~> 1.0)
     webrick (1.8.1)
-    zeitwerk (2.6.13)
 
 PLATFORMS
   x86_64-linux
+  ruby
 
 DEPENDENCIES
-  activesupport (~> 6.1.7.7)
   bigdecimal (~> 3.1.7)
   puma (~> 6.4.2)
   qless!
   qmore!
-  rack (~> 2.2.9)
-  rackup (~> 1.0.0)
-  redis (~> 3.3.5)
-  sinatra (~> 3.2.0)
+  rack (~> 3.0.10)
+  rackup (~> 2.1.0)
+  redis (~> 5.1.0)
+  sinatra (~> 4.0.0)
 
 BUNDLED WITH
-   2.3.26
+   2.5.3
