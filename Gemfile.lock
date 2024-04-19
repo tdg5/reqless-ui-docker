@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/tdg5/qless-rb.git
-  revision: 89290f430d322c984794f63e333f66bce94667a2
+  revision: f7b49bab979ddfc0c134a580c23ef89402c01d0d
   branch: main
   submodules: true
   specs:
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/tdg5/qmore.git
-  revision: 1df8ce909243569ba93d3b00d569a5bc4f6988b7
+  revision: 10b43f686c6207217ab6d3b57c42fa14bd8048d0
   branch: main
   specs:
     qmore (0.7.1)
@@ -39,7 +39,7 @@ GEM
       webrick (~> 1.8)
     redis (5.1.0)
       redis-client (>= 0.17.0)
-    redis-client (0.22.0)
+    redis-client (0.22.1)
       connection_pool
     ruby2_keywords (0.0.5)
     sinatra (4.0.0)
@@ -52,8 +52,8 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
-  x86_64-linux
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   bigdecimal (~> 3.1.7)
