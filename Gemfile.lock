@@ -52,7 +52,9 @@ GEM
     webrick (1.8.1)
 
 PLATFORMS
+  aarch64-linux
   ruby
+  universal.arm64e-darwin23
   x86_64-linux
 
 DEPENDENCIES
