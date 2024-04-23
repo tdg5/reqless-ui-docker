@@ -14,6 +14,8 @@ Qmore.monitor = Qmore::Persistence::Monitor.new(
 )
 
 builder = Rack::Builder.new do
+  use Rack::RewindableInput::Middleware
+
   map('/') do
     run Qless::Server.new(client)
   end
