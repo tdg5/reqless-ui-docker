@@ -1,13 +1,4 @@
 GIT
-  remote: https://github.com/tdg5/qless-rb.git
-  revision: f7b49bab979ddfc0c134a580c23ef89402c01d0d
-  branch: main
-  submodules: true
-  specs:
-    qless (0.10.0.pre)
-      redis (~> 5.1.0)
-
-GIT
   remote: https://github.com/tdg5/qmore.git
   revision: 10b43f686c6207217ab6d3b57c42fa14bd8048d0
   branch: main
@@ -15,6 +6,15 @@ GIT
     qmore (0.7.1)
       multi_json (~> 1.15)
       qless (~> 0.9)
+
+GIT
+  remote: https://github.com/tdg5/reqless-rb.git
+  revision: eeb49d4ca12abb2d56dc9d7cdfba7d2d39cb17ea
+  branch: main
+  submodules: true
+  specs:
+    qless (0.10.0.pre)
+      redis (~> 5.1.0)
 
 GEM
   remote: https://rubygems.org/
