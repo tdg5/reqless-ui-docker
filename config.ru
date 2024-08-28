@@ -1,23 +1,14 @@
-require 'qless'
-require 'qless/server'
-require 'qmore-server'
+require 'reqless/server'
 
 reqless_db_url = ENV['REQLESS_UI_DB_URL']
-qmore_refresh_frequency_seconds = ENV['QMORE_REFRESH_FREQUENCY_SECONDS']
 
-client = Qless::Client.new(:url => reqless_db_url)
-Qmore.client = client
-Qmore.configuration = Qmore::Configuration.new
-Qmore.monitor = Qmore::Persistence::Monitor.new(
-  Qmore.persistence,
-  qmore_refresh_frequency_seconds,
-)
+client = Reqless::Client.new(:url => reqless_db_url)
 
 builder = Rack::Builder.new do
   use Rack::RewindableInput::Middleware
 
   map('/') do
-    run Qless::Server.new(client)
+    run Reqless::Server.new(client)
   end
 end
 
